@@ -1,0 +1,27 @@
+extends ../layout.jade
+
+block content
+  h2 create app
+  form(action='/app', method='post').form
+    .form-control
+      input(name='name',type='text', required,  placeholder="name")
+    .form-control
+      input(name='callback',type='url', required,  placeholder="https://")
+    .form-control
+      button(type='submit').button.button-block create
+  table.table
+    tr
+      th #
+      th name
+      th secret
+      th url
+      th -
+    each app in apps
+      tr
+        td=app.id
+        td=app.name
+        td=app.secret
+        td=app.callback
+        td
+          a(href="/app/#{app.id}", method="delete") delete
+

@@ -1,0 +1,1 @@
+require('@kelpjs/next/start');

@@ -1,0 +1,47 @@
+
+.container{
+  max-width: 600px;
+  background: #fafafa;
+}
+
+.title{
+  text-transform: uppercase;
+}
+
+.post{
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  margin-bottom: 8px;
+  background: #fff;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.post header,
+.post footer {
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  text-align: left;
+}
+
+.post header {
+  font-size: 13px;
+  color: #b4b4b4;
+}
+
+.post img{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    width: 95%;
+  }
+} 
+
+input {
+  text-align: center;
+}

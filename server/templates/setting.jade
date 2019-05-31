@@ -1,0 +1,39 @@
+extends layout.jade
+
+block content
+  h2 setting
+  section.profile
+    form(method="post", action="/profile").form.text-center
+      .form-control
+        label full name
+        input(name="fullname", type='text', value=profile.fullname)
+      .form-control
+        label email
+        input(name="email", type='email', value=profile.email)
+      .form-control
+        label homepage
+        input(name="homepage", type='url', value=profile.homepage)
+      .form-control
+        label github
+        input(name="github", type='text', value=profile.github)
+      .form-control
+        label twitter
+        input(name="twitter", type='text', value=profile.twitter)
+      .form-control
+        button(type='submit').button.button-block.button-primary save
+  section.sessions
+    table.table
+      tr
+        th #
+        th app
+        th token
+        th -
+      each session in sessions
+        tr
+          td=session.id
+          td
+            a(href="/app/#{session.app.id}")=session.app.name
+          td=session.token
+          td
+            a(href="/logout?id=#{session.id}", method="delete") revoke
+    

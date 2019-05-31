@@ -1,0 +1,8 @@
+extends ../layout.jade
+
+block content
+  h2 auth
+  h3=app.name
+  form(method="post").form
+    button.button.button-block auth
+    a(href="javascript:history.go(-1);") back

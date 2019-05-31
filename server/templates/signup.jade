@@ -1,0 +1,19 @@
+extends layout.jade
+
+block content
+  h2 sign up
+  p=source
+  form(action='/signup', method='post').form
+    .form-control
+      label username
+        span (only letters, numbers, and underscores)
+      input(name='username', required, pattern='^[a-zA-Z0-9_]{3,}$')
+    .form-control
+      label password
+        span (min. 6 char)
+      input(name='password', type='password', required, pattern='.{6,}')
+    .form-control
+      label invitation code
+      input(type='text', name='code', value=code, required)
+    .form-control
+      button(type='submit').button.button-block.button-primary sign up

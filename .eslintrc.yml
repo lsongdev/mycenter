@@ -1,0 +1,15 @@
+extends: "airbnb-base"
+
+rules:
+  curly: off
+  no-console: off
+  no-bitwise: off
+  key-spacing: off
+  comma-dangle: off
+  arrow-parens: off
+  no-multi-spaces: off
+  arrow-body-style: off
+  no-param-reassign: off
+  array-bracket-spacing: off
+  class-methods-use-this: off
+  computed-property-spacing: off

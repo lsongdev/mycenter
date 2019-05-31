@@ -1,0 +1,25 @@
+
+
+get  /                   => home#index
+get  /join               => user#join
+post /join               => user#invite
+get  /signup             => user#signup
+post /signup             => user#create
+get  /login              => user#login
+post /login              => user#auth
+delete /logout           => user#logout
+get  /settings           => user#setting
+post /profile            => user#profile
+post /timeline           => user#timeline
+// application
+get  /app                => app#index
+post /app                => app#create
+get /app/:id             => app#app
+delete /app/:id          => app#remove
+// auth
+get  /auth               => app#auth
+post /auth               => app#accept
+get  /token              => app#token
+get /user                => user#user
+// user
+get  /:username          => user#index

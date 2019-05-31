@@ -1,0 +1,35 @@
+{
+  "name": "mycenter",
+  "version": "0.0.1",
+  "description": "user center",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "lsong",
+  "license": "MIT",
+  "dependencies": {
+    "@kelpjs/next": "latest",
+    "jade": "latest",
+    "kanary": "latest",
+    "kelp-cookie": "latest",
+    "kelp-error": "latest",
+    "kelp-render": "^1.0.3",
+    "light.css": "latest",
+    "sequelize": "latest",
+    "smtp2": "latest",
+    "sqlite3": "latest"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsongorg/mycenter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lsongorg/mycenter/issues"
+  },
+  "homepage": "https://github.com/lsongorg/mycenter#readme"
+}

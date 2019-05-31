@@ -1,0 +1,11 @@
+extends layout.jade
+
+block content
+  h2 verify
+  p please check your email, and fill code in blank to continue .
+  form(action='/signup').form
+    .form-control
+      label verify code
+      input.input(name='verify_code', required)
+    .form-control
+      button(type='submit').btn verify

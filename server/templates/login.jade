@@ -1,0 +1,14 @@
+extends layout.jade
+
+block content
+  h2 login
+  p access you personal data .
+  form(action='/login', method='post').form
+    .form-control
+      label username
+      input.input(name='username', type="text", required).text-center
+    .form-control
+      label password
+      input.input(name='password', type='password', required).text-center
+    .form-control
+      button.button.button-block.button-primary login

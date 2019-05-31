@@ -1,0 +1,12 @@
+extends layout/layout.jade
+
+block content
+  h2 inbox 
+  ul 
+  each message in messages
+    li
+      p #{message.headers.from}
+      p #{message.headers.to}
+      p #{message.subject}
+      p #{message.text}
+      p #{message.date}

@@ -1,0 +1,22 @@
+extends layout.jade
+
+block content
+  h2 home
+  if $user
+    form(action='/timeline', method='post').form
+      textarea.input(name='content', placeholder="what's up?", maxLength=140 required).input
+      button.button.button-block.button-primary post
+  .timeline
+    h3 timeline
+    ul.list.posts
+      each timeline in timelines
+        li.list-item.post
+          header
+            .time=timeline.createdAt
+          main
+          if timeline.image
+            img(src="#{timeline.image}")
+          footer.content=timeline.content
+
+          
+  

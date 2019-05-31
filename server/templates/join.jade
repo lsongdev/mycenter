@@ -1,0 +1,10 @@
+extends layout.jade
+
+block content
+  h2 join
+  p be our part, join now .
+  form(action='/join', method='post').form
+    .form-control
+      input(name='source', type='text', required).text-center
+    .form-control
+      button(type='submit').button.button-block.button-primary join
