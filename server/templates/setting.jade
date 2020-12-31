@@ -32,7 +32,8 @@ block content
         tr
           td=session.id
           td
-            a(href="/app/#{session.app.id}")=session.app.name
+            if session.app
+              a(href="/app/#{session.app.id}")=session.app.name
           td=session.token
           td
             a(href="/logout?id=#{session.id}", method="delete") revoke
