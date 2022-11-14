@@ -10,7 +10,7 @@
   "author": "lsong",
   "license": "MIT",
   "dependencies": {
-    "@kelpjs/next": "latest",
+    "@kelpjs/next": "https://github.com/kelpjs/kelp-next.git",
     "jade": "latest",
     "kanary": "latest",
     "kelp-cookie": "latest",

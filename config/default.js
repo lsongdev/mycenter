@@ -1,4 +1,4 @@
-const { load } = require('@kelpjs/next/router');
+const { load } = require('routing2');
 
 module.exports = {
   routes: load('./server/routes.txt'),

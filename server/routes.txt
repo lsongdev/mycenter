@@ -1,25 +1,25 @@
 
 
-get  /                   => home#index
-get  /join               => user#join
-post /join               => user#invite
-get  /signup             => user#signup
-post /signup             => user#create
-get  /login              => user#login
-post /login              => user#auth
-delete /logout           => user#logout
-get  /settings           => user#setting
-post /profile            => user#profile
-post /timeline           => user#timeline
+get  /                   => Home#index
+get  /join               => UserController#join
+post /join               => UserController#invite
+get  /signup             => UserController#signup
+post /signup             => UserController#create
+get  /login              => UserController#login
+post /login              => UserController#auth
+delete /logout           => UserController#logout
+get  /settings           => UserController#setting
+post /profile            => UserController#profile
+post /timeline           => UserController#timeline
 // application
-get  /app                => app#index
-post /app                => app#create
-get /app/:id             => app#app
-delete /app/:id          => app#remove
+get  /app                => App#index
+post /app                => App#create
+get /app/:id             => App#app
+delete /app/:id          => App#remove
 // auth
-get  /auth               => app#auth
-post /auth               => app#accept
-get  /token              => app#token
-get /user                => user#user
+get  /auth               => App#auth
+post /auth               => App#accept
+get  /token              => App#token
+get /user                => UserController#user
 // user
-get  /:username          => user#index
+get  /:username          => UserController#index
